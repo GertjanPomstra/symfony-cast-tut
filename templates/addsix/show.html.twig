@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}What is {{ number }} plus 6?{% endblock %}
+
+{% block body %}
+
+<h1>What is {{ number }} plus 6?</h1>
+
+<h2>The answers is {{number + 6}}.</h2>
+
+<a href="/addsix/0">What is 0 plus 6?</a>
+<br>
+<a href="/addsix/6">What is 6 plus 6?</a>
+<br>
+<a href="/addsix/777">What is 777 plus 6?</a>
+<br>
+<a href="/addsix/-1">What is -1 plus 6?</a>
+<br>
+<a href="/addsix/{{ number + 6}}">What is the answer plus 6?</a>
+<br>
+<br>
+<a href="/">Go to Homepage</a>
+
+{% endblock %}

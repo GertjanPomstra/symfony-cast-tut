@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Question: {{question}}{% endblock %}
+
+{% block body %}
+
+<h1>{{ question }}</h1>
+
+<div>
+    Question stuff.
+</div>
+
+<h2>Answer</h2>
+
+I don't know. Maybe you should try one of the following suggestions to get your question answered:
+
+<ul>
+    {% for answer in answers %}
+        <li>{{ answer }}</li>
+    {% endfor %}
+</ul>
+<br>
+<a href="/">Go to Homepage</a>
+
+
+{% endblock %}
